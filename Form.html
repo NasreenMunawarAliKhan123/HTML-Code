@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank Account Application</title>
+        <h3 style="text-align: center;">&#127974; ABC Bank</h3>
+        <h3 style="text-align: center;">Account Opening Application</h3>
+        <form action="/action_page.php">
+            <label for="fname"><b>Full Name:</b></label>
+            <label for="title">
+                <select id="title">
+                    <option value="please select">--</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                </select>
+            <input type="text" id="fname" name="fname" placeholder="First Name"  maxlength="15" required>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" maxlength="15" required><br><br>
+            <label for="email"><b>Email Address:</b></label>
+            <input type="email" id="email" placeholder="Please enter your email" pattern=".+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required><br><br>
+            <label for="country">
+                <label for="number"><b>Phone Number:</b></label>
+                <select id="country">
+                    <option value="please select">--</option>
+                    <option value="India">India</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="bang">Bangladesh</option>
+                    <option value="Sl">Sri Lanka</option>
+                </select>
+            <input type="tel" id="phonenumber" placeholder="Phone Number" pattern="[0-9]{10}" required><br><br>
+            <label for="birthday"><b>Date of Birth:</b></label>
+            <input type="date" id="birthday" name="birthday" required><br><br>
+            <label for="AC Type"><b>Account Type:</b></label>
+                <select id="AC type">
+                    <option value="Savings Account">Savings Account</option>
+                    <option value="Current Account">Current Account</option>
+                    <option value="Salary Account">Salary Account</option>
+                    <option value="Fixed Deposit Account">Fixed Deposit Account</option>
+                    <option value="NRI Account">NRI Account</option>
+
+                </select><br><br>
+            <label for="Address"><b>Address Line1:</b></label>
+            <input type="text" maxlength="30" required><br><br>
+            <label for="Address"><b>Address Line2:</b></label>
+            <input type="text" maxlength="30" required><br><br>
+            <label for="Address"><b>City:</b></label>
+            <input type="text" maxlength="30" placeholder="Type your City" required>
+            <input type="text" pattern="[0-9]{6}" placeholder="Pin Code:" required><br><br>
+            <label for="Address"><b>State</b></label>
+            <input type="text" required><br><br>
+            <label for="Address"><b>Country:</b></label>
+            <input type="text" maxlength="30" required><br><br>
+            <label for="ID proof"><b>Identity Proof</b></label>
+            <input type="radio" name="Aadhar" value="aadhar" checked/>Aadhar
+            <input type="radio" name="passport" value="passport" />Pass Port
+            <input type="radio" name="Dl" value="Dl" />Driving License<br><br>
+            <label for="myfile"><b>Select file for ID Proof:</b></label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+
+            <input type="submit">
+        </form>
+
+    </head>
+
+</html>
